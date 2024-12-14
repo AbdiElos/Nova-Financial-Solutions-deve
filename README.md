@@ -1,9 +1,5 @@
 Stock Market Analysis
-Table of Contents
-Overview
-Business Objective
-Dataset Overview
-Overview
+
 This project focuses on the detailed analysis of a large corpus of financial news data to discover correlations between news sentiment and stock market movements. This project involves Data Engineering (DE), Financial Analytics (FA), and Machine Learning Engineering (MLE).
 
 This helps to analyze complex data sets, demonstrate adaptability, and employ innovative thinking skills that are crucial for the demanding environment at Nova Financial Insights. This helps in understanding essential financial analytic techniques.
