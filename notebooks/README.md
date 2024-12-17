@@ -1,61 +1,114 @@
-# Sentiment Analysis of News Articles by Publisher
+# Task 1 News Data Analysis Project
 
-This Jupyter Notebook analyzes the sentiment distribution of news articles by publisher. The goal is to identify dominant publishers and categorize the sentiments of their articles into positive, negative, or neutral.
+This repository contains the code and analysis for exploring and analyzing news datasets. The project focuses on Exploratory Data Analysis (EDA), text analysis, time series analysis, and publisher insights.
+Project Overview
 
-## Overview
+## 1. Repository Setup
 
-The notebook performs the following steps:
+    Created a GitHub repository with a dedicated branch: feature/task-1.
+    Committed progress at least three times a day with descriptive messages.
 
-1. **Calculate Publisher Statistics**: Identify the number and percentage of articles published by each publisher.
-2. **Identify Dominant Publishers**: Filter publishers who have contributed to more than 10% of the total articles.
-3. **Sentiment Categorization**: Classify each article's sentiment as positive, negative, or neutral based on a numerical `sentiment` score.
-4. **Sentiment Distribution by Publisher**: Calculate and display the distribution of sentiment categories for each dominant publisher.
+## 2. Exploratory Data Analysis (EDA)
 
-## Key Functions
+    Descriptive Statistics:
+        Analyzed headline lengths to understand textual data distribution.
+        Identified the most active publishers and their contributions.
+        Studied publication dates to observe trends over time.
 
-- **Publisher Statistics**: Uses `value_counts()` to count articles per publisher and compute their percentage of the total articles.
-- **Sentiment Classification**: Utilizes a lambda function to categorize each article's sentiment score into positive, negative, or neutral.
-- **Sentiment Distribution**: Aggregates sentiment counts for each dominant publisher and displays the results.
+## 3. Text Analysis
 
-## Example Output
+    Sentiment Analysis: Classified headlines as Positive, Negative, or Neutral.
+    Topic Modeling: Identified common keywords and significant topics like "FDA approval" and "price target".
 
-The notebook outputs the dominant publishers along with the distribution of sentiments for their articles. An example of the output format:
+## 4. Time Series Analysis
 
-## Requirements
+    Analyzed publication frequency trends and identified spikes in news activity.
+    Studied publishing times to discover peak hours of news releases.
 
-To run this notebook, you need the following:
+## 5. Publisher Analysis
 
-- **Python 3.x**: Ensure you have Python 3.x installed.
-- **Pandas**: Install pandas using `pip install pandas`.
-- **Jupyter Notebook**: Install Jupyter Notebook using `pip install notebook`.
+    Identified top publishers and analyzed their focus areas.
+    Extracted unique email domains (if available) to group contributors.
 
-## Getting Started
+### How to Use
 
-1. Clone this repository:
-    ```bash
-    git clone <repository-url>
-    cd <repository-folder>
-    ```
+    Clone the Repository:
 
-2. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+git clone https://github.com/naolatomsa/Nova-Financial-Solutions.git
+cd Nova-Financial-Solutions
 
-3. Run the Jupyter Notebook:
-    ```bash
-    jupyter notebook analysis.ipynb
-    ```
+Switch to Task-1 Branch:
 
-## How to Use
+git checkout feature/task-1
 
-- Open the notebook and run all cells to analyze the data and visualize the sentiment distribution by publisher.
-- Modify the threshold for dominant publishers or sentiment classification criteria as needed to suit your data.
+Run the Notebook:
 
-## Contributing
+    Install dependencies:
 
-Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+        pip install -r requirements.txt
 
----
+        Open and execute the Jupyter notebook.
+  ```
 
-Happy analyzing! 📊
+## Key Files
+
+    edaAnalysis.ipynb: Contains the analysis and visualizations.
+    requirements.txt: List of required Python libraries.
+    README.md: Documentation for this project.
+
+## Technologies Used
+
+    Libraries:
+        pandas, matplotlib, seaborn: Data manipulation and visualization.
+        TextBlob, NLTK: Sentiment analysis.
+        sklearn, gensim: Topic modeling.
+        wordcloud: Generate word clouds.
+
+
+# Task 2 Quantitative analysis
+
+This notebook analyzes stock price data by calculating technical indicators and financial metrics, and visualizing trends for better insights.
+
+## Features
+
+    Calculates technical indicators:
+        Simple Moving Average (SMA)
+        Relative Strength Index (RSI)
+        Moving Average Convergence Divergence (MACD)
+    Computes financial metrics:
+        Daily Returns
+        Cumulative Returns
+    Visualizes stock trends and key indicators.
+
+## Usage
+
+    Ensure your dataset includes Open, High, Low, Close, and Volume columns.
+    Replace the sample data loading function with your dataset.
+    Run the notebook to calculate metrics and generate visualizations.
+
+
+
+# Task 3: Correlation Between News and Stock Movement
+
+# Objective
+
+Analyze the relationship between news sentiment and stock price movements.
+
+# Steps
+
+    Data Alignment: Normalize dates in news and stock datasets.
+    Sentiment Analysis: Assign sentiment scores (Positive, Negative, Neutral) to news headlines using tools like TextBlob.
+    Stock Returns: Calculate daily percentage changes in closing prices.
+    Correlation: Compute the Pearson correlation coefficient between average daily sentiment scores and stock returns.
+
+# Development
+
+    Create a task-3 branch for development.
+    Commit progress with clear messages.
+    Merge updates into main via a Pull Request (PR).
+
+# KPIs
+
+    Sentiment Analysis Accuracy
+    Correlation Strength Analysis
